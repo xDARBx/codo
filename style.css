@@ -77,9 +77,10 @@ button {
     background-image: url("./fondo.gif");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:relative;
+    background-position-y: 600px;
     max-width: 1280px;
-    margin: auto;
+    margin:auto;
     border-left: solid;
     border-right: solid;
     border-radius: 20px;
@@ -97,6 +98,12 @@ section {
 
     display: flex;
     justify-content: space-between;
+}
+
+#tour img{
+    max-width: 1280px;
+    display: block;
+    margin-top: 50px;
 }
 
 form {
@@ -140,4 +147,54 @@ footer {
     padding: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+
+footer:hover{
+    color: red;
+}
+
+.card{
+    position: relative;
+    cursor: pointer;
+}
+
+.card .face{
+    
+    transition: 0.5s;
+}
+
+.card .face.face1{
+    position: relative;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.card:hover .face.face1{
+    background: #371577;
+    transform: translateY(0);
+}
+
+.card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+card .face.face1 .content img{
+    max-width: 100px;
+}
+
+.card .face.face1 .content h3{
+    margin: 0px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
 }
