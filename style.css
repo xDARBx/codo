@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+* {
+    margin: 0;
+    
+    
+}
+
+body{
+    font-family: 'New Rocker', cursive;
+    font-size: x-large;
+    background-image: url("./fondobody.png");
+    background-size:contain ;
+    background-repeat: no-repeat;
+    background-color:black;
+    color: white;
+
+}
+
+header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+ul {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    padding: 0%;
+    
+    
+    
+}
+li {
+    padding-top: 5px;
+    width: 100%;
+    border: solid black 2px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+}
+
+li a {
+color: white;
+}
+
+li:hover {
+    background-color: black;
+    color:red;
+}
+
+div h1 {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+h1:hover{
+    color: red;
+}
+
+button {
+    position: relative;
+    right: -120px;
+    
+}
+
+.container0{
+    background-image: url("./fondo.gif");
+    background-size: cover;
+    max-width: 1280px;
+    margin: auto;
+    border-left: solid;
+    border-right: solid;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px 10px rgba(255, 255, 255, 0.534);
+    
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+section {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+
+    padding-top: 20px;
+    padding-bottom:20px ;
+    background-image:url("./logo.jpg");
+    background-size:contain;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: end;
+}
+
+.form {
+    background-color: black;
+    height: 100%;
+}
+
+li a {
+    width: 100%;
+    text-decoration: none;
+    color:white;
+    
+    
+}
+
+li a:hover {
+    width: 100%;
+    background-color: black;
+    color: red;
+
+}
+
+footer {
+    
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
