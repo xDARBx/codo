@@ -90,6 +90,7 @@ button {
 }
 
 .container0{
+    flex-direction: row;
     background-image: url("./fondo.gif");
     background-size: contain;
     background-repeat: no-repeat;
@@ -107,11 +108,11 @@ button {
 .container{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     
 }
 
 section {
-
     display: flex;
     justify-content: space-between;
 }
@@ -134,6 +135,7 @@ form {
     text-align: center;
     color: white;
     display: flex;
+    flex-direction: row;
     justify-content: end;
     box-shadow: 0px 10px 10px 10px #b4b4b6;
 }
@@ -247,4 +249,500 @@ card .face.face1 .content img{
 #miModal:target{
     opacity:1;
     pointer-events:auto;
+}
+/*-------------------------------------------TABLET----------------------*/
+@media (max-width: 790px) {
+    * {
+        font-size:medium;
+    }
+
+    #papa {
+        position: fixed;
+        width: 50px;
+        height: 50px;  
+    }
+    
+    #papa:hover {
+        width: 100px;
+        height: 100px;
+        
+    }
+    
+    header {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    ul {
+        height: 40px;
+        width: 100%;
+        display: flex;
+        list-style: none;
+        padding: 0%;
+        
+        
+        
+    }
+    li {
+        padding-top: 5px;
+        width: 50%;
+        border: solid black 2px;
+        text-align: center;
+        color: white;
+    }
+    
+    li:first-child {
+        border-top-left-radius: 20px;
+    }
+    
+    li:last-child {
+        border-top-right-radius: 20px;
+    }
+    
+    li a {
+    color: white;
+    }
+    
+    li:hover {
+        background-color: black;
+        color:red;
+    }
+    
+    div h1 {
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+    }
+    
+    h1:hover{
+        color: red;
+    }
+    
+    button {
+        position: relative;
+        right: -120px;
+        background-color: #371577;
+        height: 40px;
+        color: white;
+        border-radius: 20px;
+        
+    }
+    
+    .container0{
+        flex-direction: row;
+        background-image: url("./fondo.gif");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:relative;
+        background-position-y: 600px;
+        max-width: 790px;
+        margin:auto;
+        border-left: solid;
+        border-right: solid;
+        border-radius: 20px;
+        box-shadow: 0px 15px 15px 15px rgba(255, 255, 255, 0.534);
+        
+    }
+    
+    .container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        
+    }
+    
+    section {
+        max-width: 750px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap:50px;
+    }
+    
+    #tour img{
+        max-width: 745px;
+        display: block;
+        margin-top: 50px;
+    }
+    
+    form {
+        background-color: #371577;
+        padding-top: 20px;
+        padding-bottom:20px ;
+        background-image:url("./ghost.png");
+        background-repeat: no-repeat;
+        background-position-x: -30px;
+        background-position-y: center ;
+        margin-top: 20px;
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        box-shadow: 0px 10px 10px 10px #b4b4b6;
+    }
+    
+    .form {
+        background-color: black;
+        height: 100%;
+        border:double #371577;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        box-shadow: 0px 10px 20px 0px #000000;
+    }
+    
+    li a {
+        width: 100%;
+        text-decoration: none;
+        color:white;
+        
+        
+    }
+    
+    li a:hover {
+        width: 100%;
+        background-color: black;
+        color: red;
+    
+    }
+    
+    footer {
+        
+        background-color: #000000;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    
+    footer:hover{
+        color: red;
+    }
+    
+    .card{
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .card .face{
+        transition: 0.5s;
+    }
+    
+    .card .face.face1{
+        position: relative;
+        background: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transform: translateY(100px);
+    }
+    
+    .card:hover .face.face1{
+        background: #371577;
+        transform: translateY(0);
+    }
+    
+    .card .face.face1 .content{
+        opacity: 0.2;
+        transition: 0.5s;
+    }
+    
+    .card:hover .face.face1 .content{
+        opacity: 1;
+    }
+    
+    card .face.face1 .content img{
+        max-width: 100px;
+    }
+    
+    .card .face.face1 .content h3{
+        margin: 0px 0 0;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    
+    .modal-contenido{
+        background-color:#000000;
+        width:250px;
+        padding: 10px 10px;
+        margin: 20% auto;
+        position: relative;
+        color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 10px 10px 10px #371577;
+    }
+    
+    
+    .modal{
+        z-index: 1;
+        background-color: rgba(0,0,0,.8);
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+    }
+    #miModal:target{
+        z-index: 1;
+        opacity:1;
+        pointer-events:auto;
+    }
+}    
+ /*-------------------------------FIN TABLET-----------------------------*/
+ 
+
+ /*--------------------------------INICIO MOBILE-------------------------*/
+ @media (max-width: 440px) {
+    * {
+        font-size:medium;
+    }
+
+    #papa {
+        position: fixed;
+        width: 50px;
+        height: 50px;  
+    }
+    
+    #papa:hover {
+        width: 100px;
+        height: 100px;
+        
+    }
+    
+    header {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    ul {
+        height: 40px;
+        width: 100%;
+        display: flex;
+        list-style: none;
+        padding: 0%;
+        
+        
+        
+    }
+    li {
+        padding-top: 5px;
+        width: 50%;
+        border: solid black 2px;
+        text-align: center;
+        color: white;
+    }
+    
+    li:first-child {
+        border-top-left-radius: 20px;
+    }
+    
+    li:last-child {
+        border-top-right-radius: 20px;
+    }
+    
+    li a {
+    color: white;
+    }
+    
+    li:hover {
+        background-color: black;
+        color:red;
+    }
+    
+    div h1 {
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+    }
+    
+    h1:hover{
+        color: red;
+    }
+    
+    button {
+        position: relative;
+        right: -120px;
+        background-color: #371577;
+        height: 40px;
+        color: white;
+        border-radius: 20px;
+        
+    }
+    
+    .container0{
+        flex-direction: row;
+        background-image: url("./fondo.gif");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:relative;
+        background-position-y: 600px;
+        max-width: 440px;
+        margin:auto;
+        border-left: solid;
+        border-right: solid;
+        border-radius: 20px;
+        box-shadow: 0px 15px 15px 15px rgba(255, 255, 255, 0.534);
+        
+    }
+    
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        
+    }
+    
+    section {
+        max-width: 750px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap:50px;
+    }
+    
+    #tour img{
+        max-width: 365px;
+        display: block;
+        margin-top: 50px;
+    }
+    
+    form {
+        background-color: #371577;
+        padding-top: 20px;
+        padding-bottom:20px ;
+        background-image:url("./ghost.png");
+        background-repeat: no-repeat;
+        background-position-x: -30px;
+        background-position-y: center ;
+        margin-top: 20px;
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        box-shadow: 0px 10px 10px 10px #b4b4b6;
+    }
+    
+    .form {
+        background-color: black;
+        height: 100%;
+        border:double #371577;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        box-shadow: 0px 10px 20px 0px #000000;
+    }
+    
+    li a {
+        width: 100%;
+        text-decoration: none;
+        color:white;
+        
+        
+    }
+    
+    li a:hover {
+        width: 100%;
+        background-color: black;
+        color: red;
+    
+    }
+    
+    footer {
+        
+        background-color: #000000;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    
+    footer:hover{
+        color: red;
+    }
+    
+    .card{
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .card .face{
+        transition: 0.5s;
+    }
+    
+    .card .face.face1{
+        position: relative;
+        background: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transform: translateY(100px);
+    }
+    
+    .card:hover .face.face1{
+        background: #371577;
+        transform: translateY(0);
+    }
+    
+    .card .face.face1 .content{
+        opacity: 0.2;
+        transition: 0.5s;
+    }
+    
+    .card:hover .face.face1 .content{
+        opacity: 1;
+    }
+    
+    card .face.face1 .content img{
+        max-width: 100px;
+    }
+    
+    .card .face.face1 .content h3{
+        margin: 0px 0 0;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    
+    .modal-contenido{
+        background-color:#000000;
+        width:250px;
+        padding: 10px 10px;
+        margin: 20% auto;
+        position: relative;
+        color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 10px 10px 10px #371577;
+    }
+    
+    
+    .modal{
+        z-index: 1;
+        background-color: rgba(0,0,0,.8);
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+    }
+    #miModal:target{
+        z-index: 1;
+        opacity:1;
+        pointer-events:auto;
+    }
+
+    /*-------------------------------------FIN MOBILE-------------------*/
 }
