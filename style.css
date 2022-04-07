@@ -17,6 +17,18 @@ body{
 
 }
 
+#papa {
+    position: fixed;
+    width: 100px;
+    height: 100px;  
+}
+
+#papa:hover {
+    width: 200px;
+    height: 200px;
+    transform: rotate(360deg);
+}
+
 header {
     margin-top: 20px;
     display: flex;
@@ -70,6 +82,10 @@ h1:hover{
 button {
     position: relative;
     right: -120px;
+    background-color: #371577;
+    height: 40px;
+    color: white;
+    border-radius: 20px;
     
 }
 
@@ -107,21 +123,28 @@ section {
 }
 
 form {
-
+    background-color: #371577;
     padding-top: 20px;
     padding-bottom:20px ;
-    background-image:url("./logo.jpg");
-    background-size:contain;
+    background-image:url("./ghost.png");
+    background-repeat: no-repeat;
+    background-position-x: -30px;
+    background-position-y: center ;
     margin-top: 20px;
     text-align: center;
     color: white;
     display: flex;
     justify-content: end;
+    box-shadow: 0px 10px 10px 10px #b4b4b6;
 }
 
 .form {
     background-color: black;
     height: 100%;
+    border:double #371577;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 10px 20px 0px #000000;
 }
 
 li a {
@@ -141,7 +164,7 @@ li a:hover {
 
 footer {
     
-    background-color: black;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 20px;
@@ -159,7 +182,6 @@ footer:hover{
 }
 
 .card .face{
-    
     transition: 0.5s;
 }
 
