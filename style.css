@@ -2,50 +2,57 @@
 
 * {
     margin: 0;
-    
-    
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+
 }
 
-body{
+body {
     font-family: 'New Rocker', cursive;
     font-size: x-large;
     background-image: url("./fondobody.png");
-    background-size:contain ;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-color:black;
+    background-color: black;
     color: white;
+    margin-top: 10px;
 
 }
 
-#papa {
-    position: fixed;
-    width: 100px;
-    height: 100px;  
-}
-
-#papa:hover {
-    width: 200px;
-    height: 200px;
-    
-}
-
-header {
+  /*------------------------------------HAMBURGUESA----------------------------*/
+  header {
+    background-color: #37157754;
+    width: 1274px;
     margin-top: 20px;
     display: flex;
-    justify-content: center;
+    border-top-left-radius:20px;
+    border-top-right-radius: 20px;
 }
+
+li:hover {
+    background-color: #371577;
+}
+
+label img {
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
 ul {
     height: 40px;
-    width: 100%;
+    width: 1274px;
     display: flex;
     list-style: none;
-    padding: 0%;
     
     
     
 }
 li {
-    padding-top: 5px;
+    font-size: x-large;
     width: 100%;
     border: solid black 2px;
     text-align: center;
@@ -61,12 +68,37 @@ li:last-child {
 }
 
 li a {
-color: white;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+
+
 }
 
-li:hover {
-    background-color: black;
-    color:red;
+li a:hover {
+    color: red;
+
+}
+
+#check {
+    display: none;
+}
+/**********************************FIN HAMBURGUESA---------------------*/
+
+
+#papa {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+}
+
+#papa:hover {
+    width: 200px;
+    height: 200px;
+
 }
 
 div h1 {
@@ -75,7 +107,7 @@ div h1 {
     margin: 50px;
 }
 
-h1:hover{
+h1:hover {
     color: red;
 }
 
@@ -86,30 +118,30 @@ button {
     height: 40px;
     color: white;
     border-radius: 20px;
-    
+
 }
 
-.container0{
+.container0 {
     flex-direction: row;
     background-image: url("./fondo.gif");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position:relative;
+    background-position: relative;
     background-position-y: 600px;
     max-width: 1280px;
-    margin:auto;
+    margin: auto;
     border-left: solid;
     border-right: solid;
     border-radius: 20px;
     box-shadow: 0px 15px 15px 15px rgba(255, 255, 255, 0.534);
-    
+
 }
 
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    
+
 }
 
 section {
@@ -117,8 +149,8 @@ section {
     justify-content: space-between;
 }
 
-#tour img{
-    max-width: 1280px;
+#tour img {
+    max-width: 1274px;
     display: block;
     margin-top: 50px;
 }
@@ -126,11 +158,11 @@ section {
 form {
     background-color: #371577;
     padding-top: 20px;
-    padding-bottom:20px ;
-    background-image:url("./ghost.png");
+    padding-bottom: 20px;
+    background-image: url("./ghost.png");
     background-repeat: no-repeat;
     background-position-x: -30px;
-    background-position-y: center ;
+    background-position-y: center;
     margin-top: 20px;
     text-align: center;
     color: white;
@@ -143,29 +175,16 @@ form {
 .form {
     background-color: black;
     height: 100%;
-    border:double #371577;
+    border: double #371577;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     box-shadow: 0px 10px 20px 0px #000000;
 }
 
-li a {
-    width: 100%;
-    text-decoration: none;
-    color:white;
-    
-    
-}
 
-li a:hover {
-    width: 100%;
-    background-color: black;
-    color: red;
-
-}
 
 footer {
-    
+
     background-color: #000000;
     color: white;
     text-align: center;
@@ -174,20 +193,20 @@ footer {
     border-bottom-left-radius: 20px;
 }
 
-footer:hover{
+footer:hover {
     color: red;
 }
 
-.card{
+.card {
     position: relative;
     cursor: pointer;
 }
 
-.card .face{
+.card .face {
     transition: 0.5s;
 }
 
-.card .face.face1{
+.card .face.face1 {
     position: relative;
     background: rgb(0, 0, 0);
     display: flex;
@@ -197,25 +216,25 @@ footer:hover{
     transform: translateY(100px);
 }
 
-.card:hover .face.face1{
+.card:hover .face.face1 {
     background: #371577;
     transform: translateY(0);
 }
 
-.card .face.face1 .content{
+.card .face.face1 .content {
     opacity: 0.2;
     transition: 0.5s;
 }
 
-.card:hover .face.face1 .content{
+.card:hover .face.face1 .content {
     opacity: 1;
 }
 
-card .face.face1 .content img{
-    max-width: 100px;
+.card .face.face1 .content img {
+    max-width: 400px;
 }
 
-.card .face.face1 .content h3{
+.card .face.face1 .content h3 {
     margin: 0px 0 0;
     padding: 0;
     color: #fff;
@@ -223,9 +242,9 @@ card .face.face1 .content img{
     font-size: 1.5em;
 }
 
-.modal-contenido{
-    background-color:#000000;
-    width:250px;
+.modal-contenido {
+    background-color: #000000;
+    width: 250px;
     padding: 10px 10px;
     margin: 20% auto;
     position: relative;
@@ -235,54 +254,84 @@ card .face.face1 .content img{
 }
 
 
-.modal{
-    background-color: rgba(0,0,0,.8);
-    position:fixed;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    opacity:0;
-    pointer-events:none;
+.modal {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
     transition: all 1s;
 }
-#miModal:target{
-    opacity:1;
-    pointer-events:auto;
+
+#miModal:target {
+    opacity: 1;
+    pointer-events: auto;
 }
+
 /*-------------------------------------------TABLET----------------------*/
-@media (max-width: 790px) {
+
+@media (min-width: 790px & max-width: 800px) {
     * {
-        font-size:medium;
+        font-size: medium;
+    }
+
+    .bar-btn {
+        display: none;
+    }
+
+    .nav-menu {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background-color: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .nav-menuli a {
+        font-size: 12px;
     }
 
     #papa {
         position: fixed;
         width: 50px;
-        height: 50px;  
+        height: 50px;
     }
-    
+
     #papa:hover {
         width: 100px;
         height: 100px;
-        
+
     }
-    
-    header {
+
+    /*header {
         margin-top: 20px;
         display: flex;
         justify-content: center;
     }
+
     ul {
         height: 40px;
         width: 100%;
         display: flex;
         list-style: none;
         padding: 0%;
-        
-        
-        
+
+
+
     }
+
     li {
         padding-top: 5px;
         width: 50%;
@@ -290,34 +339,34 @@ card .face.face1 .content img{
         text-align: center;
         color: white;
     }
-    
+
     li:first-child {
         border-top-left-radius: 20px;
     }
-    
+
     li:last-child {
         border-top-right-radius: 20px;
     }
-    
+
     li a {
-    color: white;
+        color: white;
     }
-    
+
     li:hover {
         background-color: black;
-        color:red;
-    }
-    
+        color: red;
+    }*/
+
     div h1 {
         display: flex;
         justify-content: center;
         margin: 50px;
     }
-    
-    h1:hover{
+
+    h1:hover {
         color: red;
     }
-    
+
     button {
         position: relative;
         right: -120px;
@@ -325,54 +374,54 @@ card .face.face1 .content img{
         height: 40px;
         color: white;
         border-radius: 20px;
-        
+
     }
-    
-    .container0{
+
+    .container0 {
         flex-direction: row;
         background-image: url("./fondo.gif");
         background-size: contain;
         background-repeat: no-repeat;
-        background-position:relative;
+        background-position: relative;
         background-position-y: 600px;
         max-width: 790px;
-        margin:auto;
+        margin: auto;
         border-left: solid;
         border-right: solid;
         border-radius: 20px;
         box-shadow: 0px 15px 15px 15px rgba(255, 255, 255, 0.534);
-        
+
     }
-    
-    .container{
+
+    .container {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-        
+
     }
-    
+
     section {
         max-width: 750px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap:50px;
+        gap: 50px;
     }
-    
-    #tour img{
+
+    #tour img {
         max-width: 745px;
         display: block;
         margin-top: 50px;
     }
-    
+
     form {
         background-color: #371577;
         padding-top: 20px;
-        padding-bottom:20px ;
-        background-image:url("./ghost.png");
+        padding-bottom: 20px;
+        background-image: url("./ghost.png");
         background-repeat: no-repeat;
         background-position-x: -30px;
-        background-position-y: center ;
+        background-position-y: center;
         margin-top: 20px;
         text-align: center;
         color: white;
@@ -381,33 +430,33 @@ card .face.face1 .content img{
         justify-content: end;
         box-shadow: 0px 10px 10px 10px #b4b4b6;
     }
-    
+
     .form {
         background-color: black;
         height: 100%;
-        border:double #371577;
+        border: double #371577;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
         box-shadow: 0px 10px 20px 0px #000000;
     }
-    
+
     li a {
         width: 100%;
         text-decoration: none;
-        color:white;
-        
-        
+        color: white;
+
+
     }
-    
+
     li a:hover {
         width: 100%;
         background-color: black;
         color: red;
-    
+
     }
-    
+
     footer {
-        
+
         background-color: #000000;
         color: white;
         text-align: center;
@@ -415,21 +464,21 @@ card .face.face1 .content img{
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
     }
-    
-    footer:hover{
+
+    footer:hover {
         color: red;
     }
-    
-    .card{
+
+    .card {
         position: relative;
         cursor: pointer;
     }
-    
-    .card .face{
+
+    .card .face {
         transition: 0.5s;
     }
-    
-    .card .face.face1{
+
+    .card .face.face1 {
         position: relative;
         background: rgb(0, 0, 0);
         display: flex;
@@ -438,36 +487,36 @@ card .face.face1 .content img{
         z-index: 1;
         transform: translateY(100px);
     }
-    
-    .card:hover .face.face1{
+
+    .card:hover .face.face1 {
         background: #371577;
         transform: translateY(0);
     }
-    
-    .card .face.face1 .content{
+
+    .card .face.face1 .content {
         opacity: 0.2;
         transition: 0.5s;
     }
-    
-    .card:hover .face.face1 .content{
+
+    .card:hover .face.face1 .content {
         opacity: 1;
     }
-    
-    card .face.face1 .content img{
+
+    .card .face.face1 .content img {
         max-width: 100px;
     }
-    
-    .card .face.face1 .content h3{
+
+    .card .face.face1 .content h3 {
         margin: 0px 0 0;
         padding: 0;
         color: #fff;
         text-align: center;
         font-size: 1.5em;
     }
-    
-    .modal-contenido{
-        background-color:#000000;
-        width:250px;
+
+    .modal-contenido {
+        background-color: #000000;
+        width: 250px;
         padding: 10px 10px;
         margin: 20% auto;
         position: relative;
@@ -475,62 +524,151 @@ card .face.face1 .content img{
         border-radius: 20px;
         box-shadow: 0px 10px 10px 10px #371577;
     }
-    
-    
-    .modal{
+
+
+    .modal {
         z-index: 1;
-        background-color: rgba(0,0,0,.8);
-        position:fixed;
-        top:0;
-        right:0;
-        bottom:0;
-        left:0;
-        opacity:0;
-        pointer-events:none;
+        background-color: rgba(0, 0, 0, .8);
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
         transition: all 1s;
     }
-    #miModal:target{
-        z-index: 1;
-        opacity:1;
-        pointer-events:auto;
-    }
-}    
- /*-------------------------------FIN TABLET-----------------------------*/
- 
 
- /*--------------------------------INICIO MOBILE-------------------------*/
- @media (max-width: 440px) {
+    #miModal:target {
+        z-index: 1;
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+/*-------------------------------FIN TABLET-----------------------------*/
+
+
+/*--------------------------------INICIO MOBILE-------------------------*/
+
+@media (max-width: 440px) {
     * {
-        font-size:medium;
+        font-size: medium;
     }
 
     #papa {
+        display: none;
+    }
+
+    /*------------------------------------HAMBURGUESA----------------------------*/
+    
+
+    *{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    header {
+        width: 100%;
+        height: 95px;
+        background:#4f10c49f;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    nav {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
         position: fixed;
         width: 50px;
-        height: 50px;  
+        height: 50px;
+        display: flex;
+
     }
-    
-    #papa:hover {
-        width: 100px;
-        height: 100px;
+
+    .bar-btn {
+        z-index: 6;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        display: flex;
+        position: fixed;
+        padding-bottom: 20px;
+        padding-left: 169px;
+    }
+
+    .nav-menu {
+        z-index: 5;
+        position:fixed;
+        width: 100%;
+        height: 0vh;
+        top: 100px;
+        background: rgba(0, 0, 0, .95);
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .nav-menu li {
+        display: none;
+        margin: 10px 0;
+        flex-direction: column;
+        transition: all .5s;
+    }
+
+    .nav-menu li a{
+        color: rgb(245, 7, 7);
+        font-size: 16px;
+        text-transform: uppercase;
+        display: block;
         
     }
-    
-    header {
+
+    .nav-menu li a.active, .nav-menu li a:hover {
+        color: #f8f8f8;
+        transition: .3s;
+    }
+
+
+    #check {
+        display: none;
+    }
+
+
+    #check:checked ~ .nav-menu {
+        height: 100vh;
+    }
+
+    #check:checked ~ .nav-menu li {
+        display: block;
+    }
+  /**********************************FIN HAMBURGUESA---------------------*/
+
+
+    /*header {
         margin-top: 20px;
         display: flex;
         justify-content: center;
-    }
-    ul {
+    }*/
+
+    /*ul {
         height: 40px;
         width: 100%;
         display: flex;
         list-style: none;
         padding: 0%;
-        
-        
-        
+
+
+
     }
+
     li {
         padding-top: 5px;
         width: 50%;
@@ -538,34 +676,35 @@ card .face.face1 .content img{
         text-align: center;
         color: white;
     }
-    
+
     li:first-child {
         border-top-left-radius: 20px;
     }
-    
+
     li:last-child {
         border-top-right-radius: 20px;
     }
-    
+
     li a {
-    color: white;
+        color: white;
     }
-    
+
     li:hover {
         background-color: black;
-        color:red;
-    }
-    
+        color: red;
+    }*/
+
     div h1 {
         display: flex;
         justify-content: center;
         margin: 50px;
+        padding-top: 20px;
     }
-    
-    h1:hover{
+
+    h1:hover {
         color: red;
     }
-    
+
     button {
         position: relative;
         right: -120px;
@@ -573,55 +712,63 @@ card .face.face1 .content img{
         height: 40px;
         color: white;
         border-radius: 20px;
+
+    }
+
+    #video {
+        position: top;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
         
     }
-    
-    .container0{
+
+    .container0 {
         flex-direction: row;
         background-image: url("./fondo.gif");
         background-size: contain;
         background-repeat: no-repeat;
-        background-position:relative;
-        background-position-y: 600px;
+        background-position: relative;
+        background-position-y: 400px;
         max-width: 440px;
-        margin:auto;
         border-left: solid;
         border-right: solid;
         border-radius: 20px;
         box-shadow: 0px 15px 15px 15px rgba(255, 255, 255, 0.534);
-        
+
     }
-    
-    .container{
+
+    .container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         flex-direction: row;
-        
+
     }
-    
+
     section {
         max-width: 750px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap:50px;
+        gap: 50px;
     }
-    
-    #tour img{
-        max-width: 365px;
+
+    #tour img {
+        max-width: 98vw;
         display: block;
         margin-top: 50px;
     }
-    
+
     form {
         background-color: #371577;
         padding-top: 20px;
-        padding-bottom:20px ;
-        background-image:url("./ghost.png");
+        padding-bottom: 20px;
+        background-image: url("./ghost.png");
         background-repeat: no-repeat;
         background-position-x: -30px;
-        background-position-y: center ;
+        background-position-y: center;
         margin-top: 20px;
         text-align: center;
         color: white;
@@ -630,33 +777,33 @@ card .face.face1 .content img{
         justify-content: end;
         box-shadow: 0px 10px 10px 10px #b4b4b6;
     }
-    
+
     .form {
         background-color: black;
         height: 100%;
-        border:double #371577;
+        border: double #371577;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
         box-shadow: 0px 10px 20px 0px #000000;
     }
-    
-    li a {
+
+    /*li a {
         width: 100%;
         text-decoration: none;
-        color:white;
-        
-        
+        color: white;
+
+
     }
-    
+
     li a:hover {
         width: 100%;
         background-color: black;
         color: red;
-    
-    }
-    
+
+    }*/
+
     footer {
-        
+
         background-color: #000000;
         color: white;
         text-align: center;
@@ -664,21 +811,24 @@ card .face.face1 .content img{
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
     }
-    
-    footer:hover{
+
+    footer:hover {
         color: red;
     }
-    
-    .card{
+
+    .card {
+        width: 100%;
         position: relative;
         cursor: pointer;
     }
-    
-    .card .face{
+
+    .card .face {
+        
         transition: 0.5s;
     }
-    
-    .card .face.face1{
+
+    .card .face.face1 {
+        width: 100%;
         position: relative;
         background: rgb(0, 0, 0);
         display: flex;
@@ -687,36 +837,37 @@ card .face.face1 .content img{
         z-index: 1;
         transform: translateY(100px);
     }
-    
-    .card:hover .face.face1{
-        background: #371577;
+
+    .card:hover .face.face1 {
+        background: #37157741;
         transform: translateY(0);
     }
-    
-    .card .face.face1 .content{
+
+    .card .face.face1 .content {
         opacity: 0.2;
         transition: 0.5s;
     }
-    
-    .card:hover .face.face1 .content{
+
+    .card:hover .face.face1 .content {
         opacity: 1;
     }
-    
-    card .face.face1 .content img{
-        max-width: 100px;
+
+    .card .face.face1 .content img {
+        
+        height: 300px;
     }
-    
-    .card .face.face1 .content h3{
+
+    .card .face.face1 .content h3 {
         margin: 0px 0 0;
         padding: 0;
         color: #fff;
         text-align: center;
         font-size: 1.5em;
     }
-    
-    .modal-contenido{
-        background-color:#000000;
-        width:250px;
+
+    .modal-contenido {
+        background-color: #000000;
+        width: 250px;
         padding: 10px 10px;
         margin: 20% auto;
         position: relative;
@@ -724,25 +875,28 @@ card .face.face1 .content img{
         border-radius: 20px;
         box-shadow: 0px 10px 10px 10px #371577;
     }
-    
-    
-    .modal{
+
+
+    .modal {
         z-index: 1;
-        background-color: rgba(0,0,0,.8);
-        position:fixed;
-        top:0;
-        right:0;
-        bottom:0;
-        left:0;
-        opacity:0;
-        pointer-events:none;
+        background-color: rgba(0, 0, 0, .8);
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
         transition: all 1s;
     }
-    #miModal:target{
+
+    #miModal:target {
         z-index: 1;
-        opacity:1;
-        pointer-events:auto;
+        opacity: 1;
+        pointer-events: auto;
     }
 
     /*-------------------------------------FIN MOBILE-------------------*/
+
+
 }
