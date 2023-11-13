@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-11-2023 a las 20:49:24
+-- Tiempo de generación: 14-11-2023 a las 00:32:31
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.0.28
 
@@ -127,7 +127,7 @@ ALTER TABLE `compras`
 -- Indices de la tabla `lineascompra`
 --
 ALTER TABLE `lineascompra`
-  ADD PRIMARY KEY (`compras_id`);
+  ADD PRIMARY KEY (`numero`,`compras_id`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -137,7 +137,7 @@ ALTER TABLE `lineascompra`
 -- AUTO_INCREMENT de la tabla `compras`
 --
 ALTER TABLE `compras`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Restricciones para tablas volcadas
