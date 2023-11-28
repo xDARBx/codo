@@ -5,15 +5,10 @@ class Enemigo {
     public $tipo;
     public $fuerza;
     
-
-    function presentacion(){
-
-        echo "Hola soy: y mi edad es: " ;
-    }
-
+    
     function hablar(){
 
-        echo " NANANAN ";
+        echo " Muajajaja ";
     }
 
    
@@ -27,28 +22,37 @@ class Enemigo {
 }
 $pennywise = new Enemigo();
 $pennywise->tipo = "Payaso ";
+$pennywise->nombre = "Pennywise ";
+$pennywise->fuerza = 1000;
+echo $pennywise->nombre;
 echo $pennywise->tipo;
-$pennywise->matar();
+echo $pennywise->fuerza;
+
 
 $chucky = new Enemigo();
-$chucky->tipo = "Muñeco ";
+$chucky->tipo = " Muñeco ";
+$chucky->nombre = " Chucky ";
+echo $chucky->nombre;
 echo $chucky->tipo;
-$chucky->hablar();
+$chucky->matar();
 
 $jason = new Enemigo();
-$jason->tipo = "Asesino ";
+$jason->tipo = " Asesino ";
 echo $jason->tipo;
-$jason->hablar();
 $jason->matar();
+$jason->hablar();
 
 $dracula = new Enemigo();
-$dracula->tipo = "Vampiro ";
+$dracula->tipo = " Vampiro ";
+$dracula->fuerza = 300;
 echo $dracula->tipo;
+echo $dracula->fuerza;
 $dracula->matar();
 
+
 $freddy = new Enemigo();
-$freddy->tipo = "Vampiro ";
+$freddy->tipo = " Asesino ";
 echo $freddy->tipo;
-$freddy->hablar();
+$freddy->matar();
 
 ?>
